@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Button, Heading, Flex } from '@pancakeswap/uikit'
+import { Box, Button, Heading, Flex, Image } from '@pancakeswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
@@ -61,20 +61,31 @@ const Home = () => {
         <StyledHeaderInner>
           <div>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('NFT Market')}
+              {t('Quest Area')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on Binance Smart Chain')}
+              {t('Help & Earn rewards to grow up community by solving all quest.')}
             </Heading>
-            {account && (
+            {/* {account && (
               <Button as={Link} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} mt="32px">
                 {t('Manage/Sell')}
               </Button>
-            )}
+            )} */}
           </div>
-          <SearchBar />
+          {/* <SearchBar /> */}
         </StyledHeaderInner>
       </StyledPageHeader>
+
+      <Flex
+        flexGrow={0}
+        alignItems="center"
+        width={['100%', '100%', '100%', '100%']}
+        justifyContent={['center', 'center', 'center']}
+        marginTop={50}
+      >
+        <Image src="/images/safebsc/banner.svg" alt="Get some help" width={1441} height={320} />
+      </Flex>
+
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={theme.colors.background}
@@ -82,12 +93,12 @@ const Home = () => {
         concaveDivider
         dividerPosition="top"
       >
-        <Collections />
+        {/* <Collections /> */}
         <Newest />
       </PageSection>
-      <Gradient p="64px 0">
+      {/* <Gradient p="64px 0">
         <SectionsWithFoldableText header={t('FAQs')} config={config(t)} m="auto" />
-      </Gradient>
+      </Gradient> */}
     </>
   )
 }

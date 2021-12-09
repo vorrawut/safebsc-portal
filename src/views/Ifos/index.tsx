@@ -15,7 +15,7 @@ const Ifos = () => {
     <>
       <Hero />
       <Container>
-        <Flex justifyContent="center" alignItems="center" mb="32px">
+        {/* <Flex justifyContent="center" alignItems="center" mb="32px">
           <ButtonMenu activeIndex={!isExact ? 1 : 0} scale="sm" variant="subtle">
             <ButtonMenuItem as={Link} to={`${url}`}>
               {t('Next IFO')}
@@ -24,7 +24,7 @@ const Ifos = () => {
               {t('Past IFOs')}
             </ButtonMenuItem>
           </ButtonMenu>
-        </Flex>
+        </Flex> */}
         <Route exact path={`${path}`}>
           <CurrentIfo />
         </Route>

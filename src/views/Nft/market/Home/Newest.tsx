@@ -41,24 +41,24 @@ const Newest: React.FC = () => {
   return (
     <div>
       <Flex justifyContent="space-between" alignItems="center" mb="26px">
-        <Heading>{t('Newest Arrivals')}</Heading>
-        <Button
+        <Heading>{t('Quest Arrivals')}</Heading>
+        {/* <Button
           as={Link}
           to={`${nftsBaseUrl}/collections/`}
           variant="secondary"
           scale="sm"
           endIcon={<ChevronRightIcon color="primary" />}
         >
-          {t('View All')}
-        </Button>
+          {t('Random')}
+        </Button> */}
       </Flex>
       {nfts ? (
         <Grid
           gridRowGap="24px"
           gridColumnGap="16px"
-          gridTemplateColumns={['1fr', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(4, 1fr)']}
+          gridTemplateColumns={['1fr', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
         >
-          {nfts.map((nft) => {
+          {nfts.slice(1,7).map((nft) => {
             const isPBCollection = nft.collectionAddress.toLowerCase() === pancakeBunniesAddress.toLowerCase()
             const currentAskPrice =
               !isPBCollection && nft.marketData?.isTradable ? parseFloat(nft.marketData.currentAskPrice) : undefined

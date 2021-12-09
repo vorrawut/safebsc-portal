@@ -17,6 +17,8 @@ import {
   useProtocolTransactions,
 } from 'state/info/hooks'
 import TransactionTable from 'views/Info/components/InfoTables/TransactionsTable'
+import { useTeam } from 'state/teams/hooks'
+import Teams from 'views/Teams'
 
 export const ChartCardsContainer = styled(Flex)`
   justify-content: space-between;
@@ -107,7 +109,7 @@ const Overview: React.FC = () => {
 
   return (
     <Page>
-      <Heading scale="lg" mb="16px" id="info-overview-title">
+      {/* <Heading scale="lg" mb="16px" id="info-overview-title">
         {t('PancakeSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
@@ -151,19 +153,21 @@ const Overview: React.FC = () => {
             </Box>
           </Box>
         </Card>
-      </ChartCardsContainer>
-      <Heading scale="lg" mt="40px" mb="16px">
-        {t('Top Tokens')}
+      </ChartCardsContainer> */}
+
+      <Heading scale="lg" mt="20px" mb="16px">
+        {t('Top Ranking')}
       </Heading>
       <TokenTable tokenDatas={formattedTokens} />
-      <Heading scale="lg" mt="40px" mb="16px">
+      <Teams />
+      {/* <Heading scale="lg" mt="40px" mb="16px">
         {t('Top Pools')}
       </Heading>
       <PoolTable poolDatas={poolDatas} loading={somePoolsAreLoading} />
       <Heading scale="lg" mt="40px" mb="16px">
         {t('Transactions')}
-      </Heading>
-      <TransactionTable transactions={transactions} />
+      </Heading> */}
+      {/* <TransactionTable transactions={transactions} /> */}
     </Page>
   )
 }

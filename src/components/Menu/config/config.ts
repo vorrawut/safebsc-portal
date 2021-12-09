@@ -36,51 +36,69 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   //     },
   //   ],
   // },
-  // {
-  //   label: t('Win'),
-  //   href: '/prediction',
-  //   icon: 'Trophy',
-  //   items: [
-  //     {
-  //       label: t('Prediction (BETA)'),
-  //       href: '/prediction',
-  //     },
-  //     {
-  //       label: t('Lottery'),
-  //       href: '/lottery',
-  //     },
-  //   ],
-  // },
   {
-    label: t('NFT'),
+    label: t('How'),
+    href: `/ifo`,
+    icon: 'Trophy',
+    items: [
+      // {
+      //   label: t('Overview'),
+      //   href: `${nftsBaseUrl}`,
+      // },
+      // {
+      //   label: t('Collections'),
+      //   href: `${nftsBaseUrl}/collections`,
+      // },
+    ],
+  },
+  {
+    label: t('Quest Area'),
     href: `${nftsBaseUrl}`,
     icon: 'Nft',
     items: [
-      {
-        label: t('Overview'),
-        href: `${nftsBaseUrl}`,
-      },
-      {
-        label: t('Collections'),
-        href: `${nftsBaseUrl}/collections`,
-      },
+      // {
+      //   label: t('Overview'),
+      //   href: `${nftsBaseUrl}`,
+      // },
+      // {
+      //   label: t('Collections'),
+      //   href: `${nftsBaseUrl}/collections`,
+      // },
+    ],
+  },
+  {
+    label: t('Trophy'),
+    href: '/lottery',
+    icon: 'Trophy',
+    items: [
+      // {
+      //   label: t('Prediction (BETA)'),
+      //   href: '/prediction',
+      // },
+      // {
+      //   label: t('Lottery'),
+      //   href: '/lottery',
+      // },
     ],
   },
   {
     label: t('LeaderBoard'),
     href: `/info`,
     icon: 'More',
-    items: [
-      {
-        label: t('Info'),
-        href: '/info',
-      },
-      {
-        label: t('Leaderboard'),
-        href: '/teams',
-      },
-    ],
+    items: [],
   },
+  {
+    label: t('Back To SafeBSC'),
+    href: `/info`,
+    icon: 'More',
+    items: [],
+  },
+  {
+    label: t('Admin'),
+    href: `/info`,
+    icon: 'More',
+    items: [],
+  }
   // {
   //   label: '',
   //   href: '/info',

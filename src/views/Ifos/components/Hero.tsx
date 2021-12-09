@@ -33,10 +33,10 @@ const Hero = () => {
       <StyledHero>
         <Container>
           <Heading as="h1" scale="xl" mb="24px">
-            {t('IFO: Initial Farm Offerings')}
+            {t('How to be Safebsc hero!')}
           </Heading>
           <Text bold fontSize="20px">
-            {t('Buy new tokens with a brand new token sale model.')}
+            {t('Helping the community by Complese the quest and cliam your reward.')}
           </Text>
         </Container>
       </StyledHero>
