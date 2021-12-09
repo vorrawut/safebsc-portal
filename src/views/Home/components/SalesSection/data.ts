@@ -1,12 +1,12 @@
 import { SalesSectionProps } from '.'
 
 export const swapSectionData: SalesSectionProps = {
-  headingText: 'Trade anything. No registration, no hassle.',
-  bodyText: 'Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.',
+  headingText: 'To be the Top 3 and winner of all rewards.',
+  bodyText: 'Contribute by your power then claim all rewards. Dont miss the fortune of big Trophy.',
   reverse: false,
   primaryButton: {
-    to: '/swap',
-    text: 'Trade Now',
+    to: '/lottery',
+    text: 'Peek the Price!',
     external: false,
   },
   secondaryButton: {
@@ -25,12 +25,12 @@ export const swapSectionData: SalesSectionProps = {
 }
 
 export const earnSectionData: SalesSectionProps = {
-  headingText: 'Earn passive income with crypto.',
-  bodyText: 'PancakeSwap makes it easy to make your crypto work for you.',
+  headingText: 'Earn rewards by complete all quest.',
+  bodyText: 'Makes the community grow together with your portfolio.',
   reverse: true,
   primaryButton: {
-    to: '/farms',
-    text: 'Explore',
+    to: '/nfts',
+    text: 'Quest Area',
     external: false,
   },
   secondaryButton: {
